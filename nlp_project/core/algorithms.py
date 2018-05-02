@@ -13,7 +13,7 @@ class NewsChecker():
 
     @staticmethod
     def fake_or_real(news, algorithm):
-        df = pd.read_csv(os.path.join(BASE_DIR, 'core/fake_or_real_news.csv'))
+        df = pd.read_csv("https://s3.amazonaws.com/assets.datacamp.com/blog_assets/fake_or_real_news.csv")
 
         label = df["label"]
         feature = df['text']
